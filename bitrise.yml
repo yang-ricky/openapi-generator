@@ -11,6 +11,9 @@ workflows:
   primary:
     steps:
     - git-clone@6.2.1: {}
+    - brew-install@0.12.1:
+        inputs:
+        - packages: maven
     - script@1.2.0:
         title: Install Cocoapods
         inputs:
@@ -30,4 +33,4 @@ workflows:
 
 meta:
   bitrise.io:
-    stack: osx-xcode-13.4.x
+    stack: osx-xcode-14.1.x
