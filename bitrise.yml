@@ -10,7 +10,7 @@ trigger_map:
 workflows:
   primary:
     steps:
-    - git-clone@8.0.0: {}
+    - git-clone@6.2.1: {}
     - script@1.2.0:
         title: Install Cocoapods
         inputs:
