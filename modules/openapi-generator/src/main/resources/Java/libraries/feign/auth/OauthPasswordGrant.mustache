@@ -39,7 +39,7 @@ public class OauthPasswordGrant extends OAuth {
   public void configure(String username, String password, String clientId, String clientSecret) {
     this.username = username;
     this.password = password;
-    //TODO the clientId and secret are optional according with the RFC
+    //ORIGIN-TODO the clientId and secret are optional according with the RFC
     service = new ServiceBuilder(clientId)
             .apiSecret(clientSecret)
             .defaultScope(scopes)

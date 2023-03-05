@@ -507,7 +507,7 @@ public class JavaClientCodegen extends AbstractJavaCodegen
             setSerializationLibrary(additionalProperties.get(CodegenConstants.SERIALIZATION_LIBRARY).toString());
         }
 
-        //TODO: add auto-generated doc to feign
+        //ORIGIN-TODO: add auto-generated doc to feign
         if (FEIGN.equals(getLibrary())) {
             modelDocTemplateFiles.remove("model_doc.mustache");
             apiDocTemplateFiles.remove("api_doc.mustache");

@@ -480,7 +480,7 @@ public class PhpMezzioPathHandlerServerCodegen extends AbstractPhpCodegen {
                 replacement.append(":");
                 replacement.append(pp.pattern);
             }
-            //TODO add regular expressions for other types if they are actually used for path parameters
+            //ORIGIN-TODO add regular expressions for other types if they are actually used for path parameters
             replacement.append("}");
             result = result.replace("{" + pp.paramName + "}", replacement);
         }

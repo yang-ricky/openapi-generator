@@ -62,11 +62,11 @@ namespace {{apiPackage}}
 
 {{#responses}}
 {{#dataType}}
-            //TODO: Uncomment the next line to return response {{code}} or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response {{code}} or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode({{code}}, default({{&dataType}}));
 {{/dataType}}
 {{^dataType}}
-            //TODO: Uncomment the next line to return response {{code}} or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response {{code}} or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode({{code}});
 {{/dataType}}
 {{/responses}}
@@ -77,7 +77,7 @@ namespace {{apiPackage}}
             {{/examples}}
             {{#isListCollection}}{{>listReturn}}{{/isListCollection}}{{^isListCollection}}{{#isMap}}{{>mapReturn}}{{/isMap}}{{^isMap}}{{>objectReturn}}{{/isMap}}{{/isListCollection}}
             {{!TODO: defaultResponse, examples, auth, consumes, produces, nickname, externalDocs, imports, security}}
-            //TODO: Change the data returned
+            //ORIGIN-TODO: Change the data returned
             return {{#operationResultTask}}Task.FromResult<IActionResult>({{/operationResultTask}}new ObjectResult(example){{#operationResultTask}}){{/operationResultTask}};{{/returnType}}{{^returnType}}
             throw new NotImplementedException();{{/returnType}}
         }

@@ -40,7 +40,7 @@ namespace Org.OpenAPITools.Controllers
         public virtual IActionResult FakeParameterExampleTest([FromQuery (Name = "data")][Required()]Pet data)
         {
 
-            //TODO: Uncomment the next line to return response 0 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 0 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(0);
 
             throw new NotImplementedException();

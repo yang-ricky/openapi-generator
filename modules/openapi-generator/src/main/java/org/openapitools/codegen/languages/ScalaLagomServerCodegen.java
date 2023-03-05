@@ -117,7 +117,7 @@ public class ScalaLagomServerCodegen extends AbstractScalaCodegen implements Cod
         typeMapping.put("object", "Any");
         typeMapping.put("file", "File");
 
-        //TODO binary should be mapped to byte array
+        //ORIGIN-TODO binary should be mapped to byte array
         // mapped to String as a workaround
         typeMapping.put("binary", "String");
         typeMapping.put("ByteArray", "String");

@@ -134,6 +134,7 @@ public class SpringCodegen extends AbstractJavaCodegen
     public static final String CLOSE_BRACE = "}";
 
     protected String title = "OpenAPI Spring";
+    //TODO: need to move to config file instead of hard code
     protected String configPackage = "org.openapitools.configuration";
     protected String basePackage = "org.openapitools";
     protected boolean interfaceOnly = false;

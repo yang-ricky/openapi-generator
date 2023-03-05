@@ -22,7 +22,7 @@ class User
     #[PHA\Attribute(PHAttribute\Transfer::class, ["type" => \App\DTO\User::class, "objectAttr" => "bodyData"])]
     public function createUser(ServerRequestInterface $request)
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         /** @var \App\DTO\User $bodyData */
         $bodyData = $request->getAttribute("bodyData");
         throw new PHException\HttpCode(501, "Not implemented");

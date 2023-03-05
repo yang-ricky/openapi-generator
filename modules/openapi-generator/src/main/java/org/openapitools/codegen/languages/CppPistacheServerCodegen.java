@@ -292,7 +292,7 @@ public class CppPistacheServerCodegen extends AbstractCppCodegen {
                 if (param.isFile) isParsingSupported = false;
                 if (param.isCookieParam) isParsingSupported = false;
 
-                //TODO: This changes the info about the real type but it is needed to parse the header params
+                //ORIGIN-TODO: This changes the info about the real type but it is needed to parse the header params
                 if (param.isHeaderParam) {
                     param.dataType = "std::optional<Pistache::Http::Header::Raw>";
                     param.baseType = "std::optional<Pistache::Http::Header::Raw>";

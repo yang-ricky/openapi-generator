@@ -44,7 +44,7 @@ public class ErrorHandler extends DefaultHttpErrorHandler {
     }
 
     private Result handleExceptions(Throwable t) {
-        //TODO: Handle exception that need special response (return a special apimodel, notFound(), etc..)
+        //ORIGIN-TODO: Handle exception that need special response (return a special apimodel, notFound(), etc..)
         return ok();
     }
 }

@@ -126,7 +126,7 @@ public class PhpSilexServerCodegen extends DefaultCodegen implements CodegenConf
         typeMapping.put("array", "array");
         typeMapping.put("list", "array");
         typeMapping.put("object", "object");
-        //TODO binary should be mapped to byte array
+        //ORIGIN-TODO binary should be mapped to byte array
         // mapped to String as a workaround
         typeMapping.put("binary", "string");
 

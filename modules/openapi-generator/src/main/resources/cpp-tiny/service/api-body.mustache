@@ -204,7 +204,7 @@ using namespace Tiny;
             {{/isArray}}
 
             {{#isMap}}
-            //TODO: Implement map logic here
+            //ORIGIN-TODO: Implement map logic here
             {{/isMap}}
 
             {{/returnContainer}}
@@ -229,7 +229,7 @@ using namespace Tiny;
             Response<{{returnType}}<{{returnBaseType}}>> response(obj, httpCode);
             {{/isArray}}
             {{#isMap}}
-            //TODO: No support for maps.
+            //ORIGIN-TODO: No support for maps.
             Response<String> response(output, httpCode);
             {{/isMap}}
             {{/returnContainer}}

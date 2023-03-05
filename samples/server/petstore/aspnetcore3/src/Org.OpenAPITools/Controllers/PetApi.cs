@@ -39,7 +39,7 @@ namespace Org.OpenAPITools.Controllers
         public virtual IActionResult AddPet([FromBody]Pet body)
         { 
 
-            //TODO: Uncomment the next line to return response 405 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 405 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(405);
 
             throw new NotImplementedException();
@@ -58,7 +58,7 @@ namespace Org.OpenAPITools.Controllers
         public virtual IActionResult DeletePet([FromRoute][Required]long petId, [FromHeader]string apiKey)
         { 
 
-            //TODO: Uncomment the next line to return response 400 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 400 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(400);
 
             throw new NotImplementedException();
@@ -79,9 +79,9 @@ namespace Org.OpenAPITools.Controllers
         public virtual IActionResult FindPetsByStatus([FromQuery][Required()]List<string> status)
         { 
 
-            //TODO: Uncomment the next line to return response 200 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 200 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(200, default(List<Pet>));
-            //TODO: Uncomment the next line to return response 400 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 400 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(400);
             string exampleJson = null;
             exampleJson = "{\n  \"photoUrls\" : [ \"photoUrls\", \"photoUrls\" ],\n  \"name\" : \"doggie\",\n  \"id\" : 0,\n  \"category\" : {\n    \"name\" : \"name\",\n    \"id\" : 6\n  },\n  \"tags\" : [ {\n    \"name\" : \"name\",\n    \"id\" : 1\n  }, {\n    \"name\" : \"name\",\n    \"id\" : 1\n  } ],\n  \"status\" : \"available\"\n}";
@@ -90,7 +90,7 @@ namespace Org.OpenAPITools.Controllers
             var example = exampleJson != null
             ? JsonConvert.DeserializeObject<List<Pet>>(exampleJson)
             : default(List<Pet>);
-            //TODO: Change the data returned
+            //ORIGIN-TODO: Change the data returned
             return new ObjectResult(example);
         }
 
@@ -109,9 +109,9 @@ namespace Org.OpenAPITools.Controllers
         public virtual IActionResult FindPetsByTags([FromQuery][Required()]List<string> tags)
         { 
 
-            //TODO: Uncomment the next line to return response 200 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 200 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(200, default(List<Pet>));
-            //TODO: Uncomment the next line to return response 400 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 400 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(400);
             string exampleJson = null;
             exampleJson = "{\n  \"photoUrls\" : [ \"photoUrls\", \"photoUrls\" ],\n  \"name\" : \"doggie\",\n  \"id\" : 0,\n  \"category\" : {\n    \"name\" : \"name\",\n    \"id\" : 6\n  },\n  \"tags\" : [ {\n    \"name\" : \"name\",\n    \"id\" : 1\n  }, {\n    \"name\" : \"name\",\n    \"id\" : 1\n  } ],\n  \"status\" : \"available\"\n}";
@@ -120,7 +120,7 @@ namespace Org.OpenAPITools.Controllers
             var example = exampleJson != null
             ? JsonConvert.DeserializeObject<List<Pet>>(exampleJson)
             : default(List<Pet>);
-            //TODO: Change the data returned
+            //ORIGIN-TODO: Change the data returned
             return new ObjectResult(example);
         }
 
@@ -141,11 +141,11 @@ namespace Org.OpenAPITools.Controllers
         public virtual IActionResult GetPetById([FromRoute][Required]long petId)
         { 
 
-            //TODO: Uncomment the next line to return response 200 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 200 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(200, default(Pet));
-            //TODO: Uncomment the next line to return response 400 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 400 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(400);
-            //TODO: Uncomment the next line to return response 404 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 404 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(404);
             string exampleJson = null;
             exampleJson = "{\n  \"photoUrls\" : [ \"photoUrls\", \"photoUrls\" ],\n  \"name\" : \"doggie\",\n  \"id\" : 0,\n  \"category\" : {\n    \"name\" : \"name\",\n    \"id\" : 6\n  },\n  \"tags\" : [ {\n    \"name\" : \"name\",\n    \"id\" : 1\n  }, {\n    \"name\" : \"name\",\n    \"id\" : 1\n  } ],\n  \"status\" : \"available\"\n}";
@@ -154,7 +154,7 @@ namespace Org.OpenAPITools.Controllers
             var example = exampleJson != null
             ? JsonConvert.DeserializeObject<Pet>(exampleJson)
             : default(Pet);
-            //TODO: Change the data returned
+            //ORIGIN-TODO: Change the data returned
             return new ObjectResult(example);
         }
 
@@ -172,11 +172,11 @@ namespace Org.OpenAPITools.Controllers
         public virtual IActionResult UpdatePet([FromBody]Pet body)
         { 
 
-            //TODO: Uncomment the next line to return response 400 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 400 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(400);
-            //TODO: Uncomment the next line to return response 404 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 404 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(404);
-            //TODO: Uncomment the next line to return response 405 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 405 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(405);
 
             throw new NotImplementedException();
@@ -196,7 +196,7 @@ namespace Org.OpenAPITools.Controllers
         public virtual IActionResult UpdatePetWithForm([FromRoute][Required]long petId, [FromForm]string name, [FromForm]string status)
         { 
 
-            //TODO: Uncomment the next line to return response 405 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 405 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(405);
 
             throw new NotImplementedException();
@@ -217,7 +217,7 @@ namespace Org.OpenAPITools.Controllers
         public virtual IActionResult UploadFile([FromRoute][Required]long petId, [FromForm]string additionalMetadata, [FromForm]System.IO.Stream file)
         { 
 
-            //TODO: Uncomment the next line to return response 200 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 200 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(200, default(ApiResponse));
             string exampleJson = null;
             exampleJson = "{\n  \"code\" : 0,\n  \"type\" : \"type\",\n  \"message\" : \"message\"\n}";
@@ -225,7 +225,7 @@ namespace Org.OpenAPITools.Controllers
             var example = exampleJson != null
             ? JsonConvert.DeserializeObject<ApiResponse>(exampleJson)
             : default(ApiResponse);
-            //TODO: Change the data returned
+            //ORIGIN-TODO: Change the data returned
             return new ObjectResult(example);
         }
     }

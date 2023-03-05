@@ -65,7 +65,7 @@ public class JavaCXFClientCodegen extends AbstractJavaCodegen
         sourceFolder = "src"+ File.separator +"gen"+ File.separator +"java";
         invokerPackage = "org.openapitools.api";
         artifactId = "openapi-jaxrs-client";
-        dateLibrary = "legacy"; //TODO: add joda support to all jax-rs
+        dateLibrary = "legacy"; //ORIGIN-TODO: add joda support to all jax-rs
         apiPackage = "org.openapitools.api";
         modelPackage = "org.openapitools.model";
         outputFolder = "generated-code/JavaJaxRS-CXF";
@@ -80,7 +80,7 @@ public class JavaCXFClientCodegen extends AbstractJavaCodegen
 
         // clear model and api doc template as this codegen
         // does not support auto-generated markdown doc at the moment
-        //TODO: add doc templates
+        //ORIGIN-TODO: add doc templates
         modelDocTemplateFiles.remove("model_doc.mustache");
         apiDocTemplateFiles.remove("api_doc.mustache");
 

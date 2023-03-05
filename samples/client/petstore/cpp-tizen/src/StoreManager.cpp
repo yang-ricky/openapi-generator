@@ -87,7 +87,7 @@ static bool deleteOrderHelper(char * accessToken,
 	void(* handler)(Error, void* ) , void* userData, bool isAsync)
 {
 
-	//TODO: maybe delete headerList after its used to free up space?
+	//ORIGIN-TODO: maybe delete headerList after its used to free up space?
 	struct curl_slist *headerList = NULL;
 
 	
@@ -113,7 +113,7 @@ static bool deleteOrderHelper(char * accessToken,
 	url.erase(pos, s_orderId.length());
 	url.insert(pos, stringify(&orderId, "std::string"));
 
-	//TODO: free memory of errormsg, memorystruct
+	//ORIGIN-TODO: free memory of errormsg, memorystruct
 	MemoryStruct_s* p_chunk = new MemoryStruct_s();
 	long code;
 	char* errormsg = NULL;
@@ -217,7 +217,7 @@ static bool getInventoryHelper(char * accessToken,
 	, void* userData, bool isAsync)
 {
 
-	//TODO: maybe delete headerList after its used to free up space?
+	//ORIGIN-TODO: maybe delete headerList after its used to free up space?
 	struct curl_slist *headerList = NULL;
 
 	
@@ -237,7 +237,7 @@ static bool getInventoryHelper(char * accessToken,
 	int pos;
 
 
-	//TODO: free memory of errormsg, memorystruct
+	//ORIGIN-TODO: free memory of errormsg, memorystruct
 	MemoryStruct_s* p_chunk = new MemoryStruct_s();
 	long code;
 	char* errormsg = NULL;
@@ -341,7 +341,7 @@ static bool getOrderByIdProcessor(MemoryStruct_s p_chunk, long code, char* error
 		}
 		handler(out, error, userData);
 		return true;
-		//TODO: handle case where json parsing has an error
+		//ORIGIN-TODO: handle case where json parsing has an error
 
 	} else {
 		Error error;
@@ -363,7 +363,7 @@ static bool getOrderByIdHelper(char * accessToken,
 	, void* userData, bool isAsync)
 {
 
-	//TODO: maybe delete headerList after its used to free up space?
+	//ORIGIN-TODO: maybe delete headerList after its used to free up space?
 	struct curl_slist *headerList = NULL;
 
 	
@@ -389,7 +389,7 @@ static bool getOrderByIdHelper(char * accessToken,
 	url.erase(pos, s_orderId.length());
 	url.insert(pos, stringify(&orderId, "long long"));
 
-	//TODO: free memory of errormsg, memorystruct
+	//ORIGIN-TODO: free memory of errormsg, memorystruct
 	MemoryStruct_s* p_chunk = new MemoryStruct_s();
 	long code;
 	char* errormsg = NULL;
@@ -493,7 +493,7 @@ static bool placeOrderProcessor(MemoryStruct_s p_chunk, long code, char* errorms
 		}
 		handler(out, error, userData);
 		return true;
-		//TODO: handle case where json parsing has an error
+		//ORIGIN-TODO: handle case where json parsing has an error
 
 	} else {
 		Error error;
@@ -515,7 +515,7 @@ static bool placeOrderHelper(char * accessToken,
 	, void* userData, bool isAsync)
 {
 
-	//TODO: maybe delete headerList after its used to free up space?
+	//ORIGIN-TODO: maybe delete headerList after its used to free up space?
 	struct curl_slist *headerList = NULL;
 
 	
@@ -548,7 +548,7 @@ static bool placeOrderHelper(char * accessToken,
 	int pos;
 
 
-	//TODO: free memory of errormsg, memorystruct
+	//ORIGIN-TODO: free memory of errormsg, memorystruct
 	MemoryStruct_s* p_chunk = new MemoryStruct_s();
 	long code;
 	char* errormsg = NULL;

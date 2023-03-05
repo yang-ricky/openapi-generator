@@ -24,7 +24,7 @@ class StoreOrderOrderId
      */
     public function deleteOrder(ServerRequestInterface $request)
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         throw new PHException\HttpCode(501, "Not implemented");
     }
     /**
@@ -42,7 +42,7 @@ class StoreOrderOrderId
      */
     public function getOrderById(ServerRequestInterface $request): \App\DTO\Order
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         throw new PHException\HttpCode(501, "Not implemented");
     }
 }

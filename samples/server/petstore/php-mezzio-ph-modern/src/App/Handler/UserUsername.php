@@ -19,7 +19,7 @@ class UserUsername
     #[PHA\Delete()]
     public function deleteUser(ServerRequestInterface $request)
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         throw new PHException\HttpCode(501, "Not implemented");
     }
     /**
@@ -32,7 +32,7 @@ class UserUsername
     #[PHA\Producer("application/json", PHProducer\Transfer::class)]
     public function getUserByName(ServerRequestInterface $request): \App\DTO\User
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         throw new PHException\HttpCode(501, "Not implemented");
     }
     /**
@@ -44,7 +44,7 @@ class UserUsername
     #[PHA\Attribute(PHAttribute\Transfer::class, ["type" => \App\DTO\User::class, "objectAttr" => "bodyData"])]
     public function updateUser(ServerRequestInterface $request)
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         /** @var \App\DTO\User $bodyData */
         $bodyData = $request->getAttribute("bodyData");
         throw new PHException\HttpCode(501, "Not implemented");

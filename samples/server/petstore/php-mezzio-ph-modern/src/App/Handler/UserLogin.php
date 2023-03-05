@@ -28,7 +28,7 @@ class UserLogin
     #[PHA\Producer("application/json", PHProducer\Transfer::class)]
     public function loginUser(ServerRequestInterface $request): string
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         /** @var \App\DTO\LoginUserQueryData $queryData */
         $queryData = $request->getAttribute("queryData");
         throw new PHException\HttpCode(501, "Not implemented");

@@ -263,10 +263,10 @@ namespace Org.OpenAPITools.Client
                         break;
                     case "petstore_auth":
                         
-                        //TODO support oauth
+                        //ORIGIN-TODO support oauth
                         break;
                     default:
-                        //TODO show warning about security definition not found
+                        //ORIGIN-TODO show warning about security definition not found
                         break;
                 }
             }

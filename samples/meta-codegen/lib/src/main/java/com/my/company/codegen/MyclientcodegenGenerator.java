@@ -181,7 +181,7 @@ public class MyclientcodegenGenerator extends DefaultCodegen implements CodegenC
    */
   @Override
   public String escapeUnsafeCharacters(String input) {
-    //TODO: check that this logic is safe to escape unsafe characters to avoid code injection
+    //ORIGIN-TODO: check that this logic is safe to escape unsafe characters to avoid code injection
     return input;
   }
 
@@ -192,7 +192,7 @@ public class MyclientcodegenGenerator extends DefaultCodegen implements CodegenC
    * @return string with quotation mark removed or escaped
    */
   public String escapeQuotationMark(String input) {
-    //TODO: check that this logic is safe to escape quotation mark to avoid code injection
+    //ORIGIN-TODO: check that this logic is safe to escape quotation mark to avoid code injection
     return input.replace("\"", "\\\"");
   }
 }

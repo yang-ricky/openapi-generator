@@ -87,7 +87,7 @@ static bool createUserHelper(char * accessToken,
 	void(* handler)(Error, void* ) , void* userData, bool isAsync)
 {
 
-	//TODO: maybe delete headerList after its used to free up space?
+	//ORIGIN-TODO: maybe delete headerList after its used to free up space?
 	struct curl_slist *headerList = NULL;
 
 	
@@ -120,7 +120,7 @@ static bool createUserHelper(char * accessToken,
 	int pos;
 
 
-	//TODO: free memory of errormsg, memorystruct
+	//ORIGIN-TODO: free memory of errormsg, memorystruct
 	MemoryStruct_s* p_chunk = new MemoryStruct_s();
 	long code;
 	char* errormsg = NULL;
@@ -224,7 +224,7 @@ static bool createUsersWithArrayInputHelper(char * accessToken,
 	void(* handler)(Error, void* ) , void* userData, bool isAsync)
 {
 
-	//TODO: maybe delete headerList after its used to free up space?
+	//ORIGIN-TODO: maybe delete headerList after its used to free up space?
 	struct curl_slist *headerList = NULL;
 
 	
@@ -239,7 +239,7 @@ static bool createUsersWithArrayInputHelper(char * accessToken,
 	string mBody = "";
 	JsonNode* node;
 	JsonArray* json_array;
-	//TODO: Map Container
+	//ORIGIN-TODO: Map Container
 	if (isprimitive("User")) {
 		node = converttoJson(&body, "User", "array");
 	} else {
@@ -269,7 +269,7 @@ static bool createUsersWithArrayInputHelper(char * accessToken,
 	int pos;
 
 
-	//TODO: free memory of errormsg, memorystruct
+	//ORIGIN-TODO: free memory of errormsg, memorystruct
 	MemoryStruct_s* p_chunk = new MemoryStruct_s();
 	long code;
 	char* errormsg = NULL;
@@ -373,7 +373,7 @@ static bool createUsersWithListInputHelper(char * accessToken,
 	void(* handler)(Error, void* ) , void* userData, bool isAsync)
 {
 
-	//TODO: maybe delete headerList after its used to free up space?
+	//ORIGIN-TODO: maybe delete headerList after its used to free up space?
 	struct curl_slist *headerList = NULL;
 
 	
@@ -388,7 +388,7 @@ static bool createUsersWithListInputHelper(char * accessToken,
 	string mBody = "";
 	JsonNode* node;
 	JsonArray* json_array;
-	//TODO: Map Container
+	//ORIGIN-TODO: Map Container
 	if (isprimitive("User")) {
 		node = converttoJson(&body, "User", "array");
 	} else {
@@ -418,7 +418,7 @@ static bool createUsersWithListInputHelper(char * accessToken,
 	int pos;
 
 
-	//TODO: free memory of errormsg, memorystruct
+	//ORIGIN-TODO: free memory of errormsg, memorystruct
 	MemoryStruct_s* p_chunk = new MemoryStruct_s();
 	long code;
 	char* errormsg = NULL;
@@ -522,7 +522,7 @@ static bool deleteUserHelper(char * accessToken,
 	void(* handler)(Error, void* ) , void* userData, bool isAsync)
 {
 
-	//TODO: maybe delete headerList after its used to free up space?
+	//ORIGIN-TODO: maybe delete headerList after its used to free up space?
 	struct curl_slist *headerList = NULL;
 
 	
@@ -548,7 +548,7 @@ static bool deleteUserHelper(char * accessToken,
 	url.erase(pos, s_username.length());
 	url.insert(pos, stringify(&username, "std::string"));
 
-	//TODO: free memory of errormsg, memorystruct
+	//ORIGIN-TODO: free memory of errormsg, memorystruct
 	MemoryStruct_s* p_chunk = new MemoryStruct_s();
 	long code;
 	char* errormsg = NULL;
@@ -652,7 +652,7 @@ static bool getUserByNameProcessor(MemoryStruct_s p_chunk, long code, char* erro
 		}
 		handler(out, error, userData);
 		return true;
-		//TODO: handle case where json parsing has an error
+		//ORIGIN-TODO: handle case where json parsing has an error
 
 	} else {
 		Error error;
@@ -674,7 +674,7 @@ static bool getUserByNameHelper(char * accessToken,
 	, void* userData, bool isAsync)
 {
 
-	//TODO: maybe delete headerList after its used to free up space?
+	//ORIGIN-TODO: maybe delete headerList after its used to free up space?
 	struct curl_slist *headerList = NULL;
 
 	
@@ -700,7 +700,7 @@ static bool getUserByNameHelper(char * accessToken,
 	url.erase(pos, s_username.length());
 	url.insert(pos, stringify(&username, "std::string"));
 
-	//TODO: free memory of errormsg, memorystruct
+	//ORIGIN-TODO: free memory of errormsg, memorystruct
 	MemoryStruct_s* p_chunk = new MemoryStruct_s();
 	long code;
 	char* errormsg = NULL;
@@ -799,7 +799,7 @@ static bool loginUserProcessor(MemoryStruct_s p_chunk, long code, char* errormsg
 		}
 		handler(out, error, userData);
 		return true;
-		//TODO: handle case where json parsing has an error
+		//ORIGIN-TODO: handle case where json parsing has an error
 
 	} else {
 		Error error;
@@ -821,7 +821,7 @@ static bool loginUserHelper(char * accessToken,
 	, void* userData, bool isAsync)
 {
 
-	//TODO: maybe delete headerList after its used to free up space?
+	//ORIGIN-TODO: maybe delete headerList after its used to free up space?
 	struct curl_slist *headerList = NULL;
 
 	
@@ -849,7 +849,7 @@ static bool loginUserHelper(char * accessToken,
 	int pos;
 
 
-	//TODO: free memory of errormsg, memorystruct
+	//ORIGIN-TODO: free memory of errormsg, memorystruct
 	MemoryStruct_s* p_chunk = new MemoryStruct_s();
 	long code;
 	char* errormsg = NULL;
@@ -953,7 +953,7 @@ static bool logoutUserHelper(char * accessToken,
 	void(* handler)(Error, void* ) , void* userData, bool isAsync)
 {
 
-	//TODO: maybe delete headerList after its used to free up space?
+	//ORIGIN-TODO: maybe delete headerList after its used to free up space?
 	struct curl_slist *headerList = NULL;
 
 	
@@ -973,7 +973,7 @@ static bool logoutUserHelper(char * accessToken,
 	int pos;
 
 
-	//TODO: free memory of errormsg, memorystruct
+	//ORIGIN-TODO: free memory of errormsg, memorystruct
 	MemoryStruct_s* p_chunk = new MemoryStruct_s();
 	long code;
 	char* errormsg = NULL;
@@ -1077,7 +1077,7 @@ static bool updateUserHelper(char * accessToken,
 	void(* handler)(Error, void* ) , void* userData, bool isAsync)
 {
 
-	//TODO: maybe delete headerList after its used to free up space?
+	//ORIGIN-TODO: maybe delete headerList after its used to free up space?
 	struct curl_slist *headerList = NULL;
 
 	
@@ -1116,7 +1116,7 @@ static bool updateUserHelper(char * accessToken,
 	url.erase(pos, s_username.length());
 	url.insert(pos, stringify(&username, "std::string"));
 
-	//TODO: free memory of errormsg, memorystruct
+	//ORIGIN-TODO: free memory of errormsg, memorystruct
 	MemoryStruct_s* p_chunk = new MemoryStruct_s();
 	long code;
 	char* errormsg = NULL;

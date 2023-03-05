@@ -24,7 +24,7 @@ class UserUsername
      */
     public function deleteUser(ServerRequestInterface $request)
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         throw new PHException\HttpCode(501, "Not implemented");
     }
     /**
@@ -42,7 +42,7 @@ class UserUsername
      */
     public function getUserByName(ServerRequestInterface $request): \App\DTO\User
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         throw new PHException\HttpCode(501, "Not implemented");
     }
     /**
@@ -57,7 +57,7 @@ class UserUsername
      */
     public function updateUser(ServerRequestInterface $request)
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         /** @var \App\DTO\User $bodyData */
         $bodyData = $request->getAttribute("bodyData");
         throw new PHException\HttpCode(501, "Not implemented");

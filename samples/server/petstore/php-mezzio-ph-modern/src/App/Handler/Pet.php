@@ -28,7 +28,7 @@ class Pet
     #[PHA\Producer("application/json", PHProducer\Transfer::class)]
     public function addPet(ServerRequestInterface $request): \App\DTO\Pet
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         /** @var \App\DTO\Pet $bodyData */
         $bodyData = $request->getAttribute("bodyData");
         throw new PHException\HttpCode(501, "Not implemented");
@@ -48,7 +48,7 @@ class Pet
     #[PHA\Producer("application/json", PHProducer\Transfer::class)]
     public function updatePet(ServerRequestInterface $request): \App\DTO\Pet
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         /** @var \App\DTO\Pet $bodyData */
         $bodyData = $request->getAttribute("bodyData");
         throw new PHException\HttpCode(501, "Not implemented");

@@ -19,7 +19,7 @@ class UserLogout
     #[PHA\Get()]
     public function logoutUser(ServerRequestInterface $request)
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         throw new PHException\HttpCode(501, "Not implemented");
     }
 }

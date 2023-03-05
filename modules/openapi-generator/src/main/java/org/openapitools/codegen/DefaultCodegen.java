@@ -3608,7 +3608,7 @@ public class DefaultCodegen implements CodegenConfig {
         Schema innerSchema = unaliasSchema(getAdditionalProperties(p));
         if (innerSchema == null) {
             LOGGER.error("Undefined map inner type for `{}`. Default to String.", p.getName());
-            innerSchema = new StringSchema().description("//TODO automatically added by openapi-generator due to undefined type");
+            innerSchema = new StringSchema().description("//ORIGIN-TODO automatically added by openapi-generator due to undefined type");
             p.setAdditionalProperties(innerSchema);
         }
         CodegenProperty cp = fromProperty("inner", innerSchema, false);
@@ -6990,7 +6990,7 @@ public class DefaultCodegen implements CodegenConfig {
             Schema inner = getAdditionalProperties(schema);
             if (inner == null) {
                 LOGGER.error("No inner type supplied for map parameter `{}`. Default to type:string", schema.getName());
-                inner = new StringSchema().description("//TODO automatically added by openapi-generator");
+                inner = new StringSchema().description("//ORIGIN-TODO automatically added by openapi-generator");
                 schema.setAdditionalProperties(inner);
             }
             CodegenProperty codegenProperty = fromProperty("property", schema, false);

@@ -322,7 +322,7 @@ public class CSharpClientCodegen extends AbstractCSharpCodegen {
             setNetStandard(Boolean.TRUE);
 
             //Tests not yet implemented for .NET Standard codegen
-            //Todo implement it
+            //ORIGIN-TODO implement it
             excludeTests = true;
         } else if (UWP.equals(this.targetFramework)) {
             LOGGER.warn("UWP support has been DEPRECATED in this generator. Please use `csharp-netcore` generator instead.");

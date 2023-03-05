@@ -113,7 +113,7 @@ static bool {{nickname}}Processor(MemoryStruct_s p_chunk, long code, char* error
 		}
 		handler(out, error, userData);
 		return true;
-		//TODO: handle case where json parsing has an error
+		//ORIGIN-TODO: handle case where json parsing has an error
 		{{/returnType}}
 		{{/returnContainer}}
 
@@ -140,7 +140,7 @@ static bool {{nickname}}Helper(char * accessToken,
 	{{^returnType}}void(* handler)(Error, void* ) {{/returnType}}, void* userData, bool isAsync)
 {
 
-	//TODO: maybe delete headerList after its used to free up space?
+	//ORIGIN-TODO: maybe delete headerList after its used to free up space?
 	struct curl_slist *headerList = NULL;
 
 	{{#headerParams}}{{#collectionFormat}}
@@ -207,7 +207,7 @@ static bool {{nickname}}Helper(char * accessToken,
 	{{#allParams}}
 	{{#isBodyParam}}
 	{{#isContainer}}
-	//TODO: Map Container
+	//ORIGIN-TODO: Map Container
 	{{#isArray}}
 	if (isprimitive("{{baseType}}")) {
 		node = converttoJson(&{{paramName}}, "{{baseType}}", "array");
@@ -282,7 +282,7 @@ static bool {{nickname}}Helper(char * accessToken,
 	url.insert(pos, stringify(&{{paramName}}, "{{dataType}}"));
 	{{/pathParams}}
 
-	//TODO: free memory of errormsg, memorystruct
+	//ORIGIN-TODO: free memory of errormsg, memorystruct
 	MemoryStruct_s* p_chunk = new MemoryStruct_s();
 	long code;
 	char* errormsg = NULL;

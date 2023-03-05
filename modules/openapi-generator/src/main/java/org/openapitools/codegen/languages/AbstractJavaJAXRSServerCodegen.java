@@ -60,7 +60,7 @@ public abstract class AbstractJavaJAXRSServerCodegen extends AbstractJavaCodegen
         sourceFolder = "src/gen/java";
         invokerPackage = "org.openapitools.api";
         artifactId = "openapi-jaxrs-server";
-        dateLibrary = "legacy"; //TODO: add joda support to all jax-rs
+        dateLibrary = "legacy"; //ORIGIN-TODO: add joda support to all jax-rs
         apiPackage = "org.openapitools.api";
         modelPackage = "org.openapitools.model";
 

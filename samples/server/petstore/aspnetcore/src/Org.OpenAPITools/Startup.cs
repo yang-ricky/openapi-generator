@@ -121,10 +121,10 @@ namespace Org.OpenAPITools
                 })
                 .UseSwaggerUI(c =>
                 {
-                    //TODO: Either use the SwaggerGen generated Swagger contract (generated from C# classes)
+                    //ORIGIN-TODO: Either use the SwaggerGen generated Swagger contract (generated from C# classes)
                     c.SwaggerEndpoint("/swagger/1.0.0/openapi.json", "OpenAPI Petstore");
 
-                    //TODO: Or alternatively use the original Swagger contract that's included in the static files
+                    //ORIGIN-TODO: Or alternatively use the original Swagger contract that's included in the static files
                     // c.SwaggerEndpoint("/openapi-original.json", "OpenAPI Petstore Original");
                 });
 

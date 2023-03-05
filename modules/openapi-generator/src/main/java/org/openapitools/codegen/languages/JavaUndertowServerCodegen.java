@@ -51,7 +51,7 @@ public class JavaUndertowServerCodegen extends AbstractJavaCodegen {
         embeddedTemplateDir = templateDir = "java-undertow-server";
         invokerPackage = "org.openapitools.handler";
         artifactId = "openapi-undertow-server";
-        dateLibrary = "legacy"; //TODO: add joda support
+        dateLibrary = "legacy"; //ORIGIN-TODO: add joda support
 
         // clioOptions default redefinition need to be updated
         updateOption(CodegenConstants.INVOKER_PACKAGE, this.getInvokerPackage());
@@ -62,7 +62,7 @@ public class JavaUndertowServerCodegen extends AbstractJavaCodegen {
 
         // clear model and api doc template as this codegen
         // does not support auto-generated markdown doc at the moment
-        //TODO: add doc templates
+        //ORIGIN-TODO: add doc templates
         modelDocTemplateFiles.remove("model_doc.mustache");
         apiDocTemplateFiles.remove("api_doc.mustache");
 

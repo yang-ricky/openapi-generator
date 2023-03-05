@@ -27,7 +27,7 @@ class UserCreateWithList
      */
     public function createUsersWithListInput(ServerRequestInterface $request)
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         /** @var \App\DTO\Collection36 $bodyData */
         $bodyData = $request->getAttribute("bodyData");
         throw new PHException\HttpCode(501, "Not implemented");

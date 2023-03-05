@@ -310,7 +310,7 @@ void PFXPetApi::addPetCallback(PFXHttpRequestWorker *worker) {
         scope.append("read:pets");
         QString scopeStr = scope.join(" ");
         QString authorizationUrl("http://petstore.swagger.io/api/oauth/dialog");
-        //TODO get clientID and Secret and state in the config? https://swagger.io/docs/specification/authentication/oauth2/ states that you should do as you like
+        //ORIGIN-TODO get clientID and Secret and state in the config? https://swagger.io/docs/specification/authentication/oauth2/ states that you should do as you like
         _implicitFlow.setVariables(authorizationUrl, scopeStr, "state" , "http://127.0.0.1:9999", "clientId");
         emit _implicitFlow.authenticationNeeded();
 
@@ -476,7 +476,7 @@ void PFXPetApi::deletePetCallback(PFXHttpRequestWorker *worker) {
         scope.append("read:pets");
         QString scopeStr = scope.join(" ");
         QString authorizationUrl("http://petstore.swagger.io/api/oauth/dialog");
-        //TODO get clientID and Secret and state in the config? https://swagger.io/docs/specification/authentication/oauth2/ states that you should do as you like
+        //ORIGIN-TODO get clientID and Secret and state in the config? https://swagger.io/docs/specification/authentication/oauth2/ states that you should do as you like
         _implicitFlow.setVariables(authorizationUrl, scopeStr, "state" , "http://127.0.0.1:9999", "clientId");
         emit _implicitFlow.authenticationNeeded();
 
@@ -660,7 +660,7 @@ void PFXPetApi::findPetsByStatusCallback(PFXHttpRequestWorker *worker) {
         scope.append("read:pets");
         QString scopeStr = scope.join(" ");
         QString authorizationUrl("http://petstore.swagger.io/api/oauth/dialog");
-        //TODO get clientID and Secret and state in the config? https://swagger.io/docs/specification/authentication/oauth2/ states that you should do as you like
+        //ORIGIN-TODO get clientID and Secret and state in the config? https://swagger.io/docs/specification/authentication/oauth2/ states that you should do as you like
         _implicitFlow.setVariables(authorizationUrl, scopeStr, "state" , "http://127.0.0.1:9999", "clientId");
         emit _implicitFlow.authenticationNeeded();
 
@@ -844,7 +844,7 @@ void PFXPetApi::findPetsByTagsCallback(PFXHttpRequestWorker *worker) {
         scope.append("read:pets");
         QString scopeStr = scope.join(" ");
         QString authorizationUrl("http://petstore.swagger.io/api/oauth/dialog");
-        //TODO get clientID and Secret and state in the config? https://swagger.io/docs/specification/authentication/oauth2/ states that you should do as you like
+        //ORIGIN-TODO get clientID and Secret and state in the config? https://swagger.io/docs/specification/authentication/oauth2/ states that you should do as you like
         _implicitFlow.setVariables(authorizationUrl, scopeStr, "state" , "http://127.0.0.1:9999", "clientId");
         emit _implicitFlow.authenticationNeeded();
 
@@ -1004,7 +1004,7 @@ void PFXPetApi::updatePetCallback(PFXHttpRequestWorker *worker) {
         scope.append("read:pets");
         QString scopeStr = scope.join(" ");
         QString authorizationUrl("http://petstore.swagger.io/api/oauth/dialog");
-        //TODO get clientID and Secret and state in the config? https://swagger.io/docs/specification/authentication/oauth2/ states that you should do as you like
+        //ORIGIN-TODO get clientID and Secret and state in the config? https://swagger.io/docs/specification/authentication/oauth2/ states that you should do as you like
         _implicitFlow.setVariables(authorizationUrl, scopeStr, "state" , "http://127.0.0.1:9999", "clientId");
         emit _implicitFlow.authenticationNeeded();
 
@@ -1114,7 +1114,7 @@ void PFXPetApi::updatePetWithFormCallback(PFXHttpRequestWorker *worker) {
         scope.append("read:pets");
         QString scopeStr = scope.join(" ");
         QString authorizationUrl("http://petstore.swagger.io/api/oauth/dialog");
-        //TODO get clientID and Secret and state in the config? https://swagger.io/docs/specification/authentication/oauth2/ states that you should do as you like
+        //ORIGIN-TODO get clientID and Secret and state in the config? https://swagger.io/docs/specification/authentication/oauth2/ states that you should do as you like
         _implicitFlow.setVariables(authorizationUrl, scopeStr, "state" , "http://127.0.0.1:9999", "clientId");
         emit _implicitFlow.authenticationNeeded();
 
@@ -1225,7 +1225,7 @@ void PFXPetApi::uploadFileCallback(PFXHttpRequestWorker *worker) {
         scope.append("read:pets");
         QString scopeStr = scope.join(" ");
         QString authorizationUrl("http://petstore.swagger.io/api/oauth/dialog");
-        //TODO get clientID and Secret and state in the config? https://swagger.io/docs/specification/authentication/oauth2/ states that you should do as you like
+        //ORIGIN-TODO get clientID and Secret and state in the config? https://swagger.io/docs/specification/authentication/oauth2/ states that you should do as you like
         _implicitFlow.setVariables(authorizationUrl, scopeStr, "state" , "http://127.0.0.1:9999", "clientId");
         emit _implicitFlow.authenticationNeeded();
 

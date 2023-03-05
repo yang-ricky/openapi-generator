@@ -1,7 +1,7 @@
 #include "PetApi.h"
 
 const char* ssid = "your wifi name"; // TODO Change wifi name
-const char* password = "Your wifi password"; //TODO Change wifi password
+const char* password = "Your wifi password"; //ORIGIN-TODO Change wifi password
 
 
 void setup(){

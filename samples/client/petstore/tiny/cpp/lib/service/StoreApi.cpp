@@ -76,12 +76,12 @@ using namespace Tiny;
 
 
 
-            //TODO: Implement map logic here
+            //ORIGIN-TODO: Implement map logic here
 
 
 
 
-            //TODO: No support for maps.
+            //ORIGIN-TODO: No support for maps.
             Response<String> response(output, httpCode);
             return response;
         }

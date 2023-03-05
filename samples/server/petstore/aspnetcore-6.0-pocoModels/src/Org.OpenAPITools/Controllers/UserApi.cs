@@ -43,7 +43,7 @@ namespace Org.OpenAPITools.Controllers
         public virtual IActionResult CreateUser([FromBody]User user)
         {
 
-            //TODO: Uncomment the next line to return response 0 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 0 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(0);
 
             throw new NotImplementedException();
@@ -63,7 +63,7 @@ namespace Org.OpenAPITools.Controllers
         public virtual IActionResult CreateUsersWithArrayInput([FromBody]List<User> user)
         {
 
-            //TODO: Uncomment the next line to return response 0 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 0 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(0);
 
             throw new NotImplementedException();
@@ -83,7 +83,7 @@ namespace Org.OpenAPITools.Controllers
         public virtual IActionResult CreateUsersWithListInput([FromBody]List<User> user)
         {
 
-            //TODO: Uncomment the next line to return response 0 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 0 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(0);
 
             throw new NotImplementedException();
@@ -104,9 +104,9 @@ namespace Org.OpenAPITools.Controllers
         public virtual IActionResult DeleteUser([FromRoute (Name = "username")][Required]string username)
         {
 
-            //TODO: Uncomment the next line to return response 400 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 400 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(400);
-            //TODO: Uncomment the next line to return response 404 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 404 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(404);
 
             throw new NotImplementedException();
@@ -127,11 +127,11 @@ namespace Org.OpenAPITools.Controllers
         public virtual IActionResult GetUserByName([FromRoute (Name = "username")][Required]string username)
         {
 
-            //TODO: Uncomment the next line to return response 200 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 200 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(200, default(User));
-            //TODO: Uncomment the next line to return response 400 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 400 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(400);
-            //TODO: Uncomment the next line to return response 404 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 404 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(404);
             string exampleJson = null;
             exampleJson = "{\n  \"firstName\" : \"firstName\",\n  \"lastName\" : \"lastName\",\n  \"password\" : \"password\",\n  \"userStatus\" : 6,\n  \"phone\" : \"phone\",\n  \"id\" : 0,\n  \"email\" : \"email\",\n  \"username\" : \"username\"\n}";
@@ -140,7 +140,7 @@ namespace Org.OpenAPITools.Controllers
             var example = exampleJson != null
             ? JsonConvert.DeserializeObject<User>(exampleJson)
             : default(User);
-            //TODO: Change the data returned
+            //ORIGIN-TODO: Change the data returned
             return new ObjectResult(example);
         }
 
@@ -159,16 +159,16 @@ namespace Org.OpenAPITools.Controllers
         public virtual IActionResult LoginUser([FromQuery (Name = "username")][Required()][RegularExpression("^[a-zA-Z0-9]+[a-zA-Z0-9\\.\\-_]*[a-zA-Z0-9]+$")]string username, [FromQuery (Name = "password")][Required()]string password)
         {
 
-            //TODO: Uncomment the next line to return response 200 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 200 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(200, default(string));
-            //TODO: Uncomment the next line to return response 400 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 400 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(400);
             string exampleJson = null;
             
             var example = exampleJson != null
             ? JsonConvert.DeserializeObject<string>(exampleJson)
             : default(string);
-            //TODO: Change the data returned
+            //ORIGIN-TODO: Change the data returned
             return new ObjectResult(example);
         }
 
@@ -184,7 +184,7 @@ namespace Org.OpenAPITools.Controllers
         public virtual IActionResult LogoutUser()
         {
 
-            //TODO: Uncomment the next line to return response 0 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 0 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(0);
 
             throw new NotImplementedException();
@@ -207,9 +207,9 @@ namespace Org.OpenAPITools.Controllers
         public virtual IActionResult UpdateUser([FromRoute (Name = "username")][Required]string username, [FromBody]User user)
         {
 
-            //TODO: Uncomment the next line to return response 400 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 400 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(400);
-            //TODO: Uncomment the next line to return response 404 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
+            //ORIGIN-TODO: Uncomment the next line to return response 404 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(404);
 
             throw new NotImplementedException();

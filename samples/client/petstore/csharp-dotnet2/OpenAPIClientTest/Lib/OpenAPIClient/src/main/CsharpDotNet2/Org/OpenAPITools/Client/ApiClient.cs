@@ -266,7 +266,7 @@ namespace Org.OpenAPITools.Client
                         headerParams["Authorization"] = "Bearer " + Configuration.AccessToken;
                         break;
                     default:
-                        //TODO show warning about security definition not found
+                        //ORIGIN-TODO show warning about security definition not found
                         break;
                 }
             }

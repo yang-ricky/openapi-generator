@@ -167,7 +167,7 @@ open class {{generatorClass}}() : DefaultCodegen(), CodegenConfig {
      * @return string with unsafe characters removed or escaped
      */
     override fun escapeUnsafeCharacters(input: String): String {
-        //TODO: check that this logic is safe to escape unsafe characters to avoid code injection
+        //ORIGIN-TODO: check that this logic is safe to escape unsafe characters to avoid code injection
         return input
     }
 
@@ -178,7 +178,7 @@ open class {{generatorClass}}() : DefaultCodegen(), CodegenConfig {
      * @return string with quotation mark removed or escaped
      */
     override fun escapeQuotationMark(input: String): String {
-        //TODO: check that this logic is safe to escape quotation mark to avoid code injection
+        //ORIGIN-TODO: check that this logic is safe to escape quotation mark to avoid code injection
         return with(input) { replace("\"", "\\\"") }
     }
 }

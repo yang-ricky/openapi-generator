@@ -10,7 +10,7 @@ namespace test_namespace {
 
 void OauthBase::onFinish(QNetworkReply *rep)
 {
-    //TODO emit error signal when token is wrong
+    //ORIGIN-TODO emit error signal when token is wrong
     QJsonDocument document = QJsonDocument::fromJson(rep->readAll());
     QJsonObject rootObj = document.object();
     QString token = rootObj.find("access_token").value().toString();
@@ -110,7 +110,7 @@ OauthImplicit::OauthImplicit(QObject *parent) : OauthBase(parent){}
 
 void OauthImplicit::link()
 {
-    //TODO correct linking
+    //ORIGIN-TODO correct linking
     connect(&m_server, SIGNAL(dataReceived(QMap<QString,QString>)), this, SLOT(ImplicitTokenReceived(QMap<QString,QString>)));
     connect(this, SIGNAL(authenticationNeeded()), this, SLOT(authenticationNeededCallback()));
     connect(this, SIGNAL(tokenReceived()), &m_server, SLOT(stop()));

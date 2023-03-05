@@ -35,7 +35,7 @@ class PetFindByStatus
      */
     public function findPetsByStatus(ServerRequestInterface $request): \App\DTO\Collection19
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         /** @var \App\DTO\FindPetsByStatusQueryData $queryData */
         $queryData = $request->getAttribute("queryData");
         throw new PHException\HttpCode(501, "Not implemented");

@@ -671,7 +671,7 @@ namespace Org.OpenAPITools.Client
                 /* this type of key can hold many type different types of private key, but here due lack of pem header
                 Considering this as EC key
                 */
-                //TODO :- update the key based on oid
+                //ORIGIN-TODO :- update the key based on oid
                 keyType = PrivateKeyType.ECDSA;
             }
             else

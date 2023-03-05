@@ -87,7 +87,7 @@ static bool addPetHelper(char * accessToken,
 	void(* handler)(Error, void* ) , void* userData, bool isAsync)
 {
 
-	//TODO: maybe delete headerList after its used to free up space?
+	//ORIGIN-TODO: maybe delete headerList after its used to free up space?
 	struct curl_slist *headerList = NULL;
 
 	
@@ -121,7 +121,7 @@ static bool addPetHelper(char * accessToken,
 	int pos;
 
 
-	//TODO: free memory of errormsg, memorystruct
+	//ORIGIN-TODO: free memory of errormsg, memorystruct
 	MemoryStruct_s* p_chunk = new MemoryStruct_s();
 	long code;
 	char* errormsg = NULL;
@@ -225,7 +225,7 @@ static bool deletePetHelper(char * accessToken,
 	void(* handler)(Error, void* ) , void* userData, bool isAsync)
 {
 
-	//TODO: maybe delete headerList after its used to free up space?
+	//ORIGIN-TODO: maybe delete headerList after its used to free up space?
 	struct curl_slist *headerList = NULL;
 
 	
@@ -257,7 +257,7 @@ static bool deletePetHelper(char * accessToken,
 	url.erase(pos, s_petId.length());
 	url.insert(pos, stringify(&petId, "long long"));
 
-	//TODO: free memory of errormsg, memorystruct
+	//ORIGIN-TODO: free memory of errormsg, memorystruct
 	MemoryStruct_s* p_chunk = new MemoryStruct_s();
 	long code;
 	char* errormsg = NULL;
@@ -375,7 +375,7 @@ static bool findPetsByStatusHelper(char * accessToken,
 	, void* userData, bool isAsync)
 {
 
-	//TODO: maybe delete headerList after its used to free up space?
+	//ORIGIN-TODO: maybe delete headerList after its used to free up space?
 	struct curl_slist *headerList = NULL;
 
 	
@@ -401,7 +401,7 @@ static bool findPetsByStatusHelper(char * accessToken,
 	int pos;
 
 
-	//TODO: free memory of errormsg, memorystruct
+	//ORIGIN-TODO: free memory of errormsg, memorystruct
 	MemoryStruct_s* p_chunk = new MemoryStruct_s();
 	long code;
 	char* errormsg = NULL;
@@ -519,7 +519,7 @@ static bool findPetsByTagsHelper(char * accessToken,
 	, void* userData, bool isAsync)
 {
 
-	//TODO: maybe delete headerList after its used to free up space?
+	//ORIGIN-TODO: maybe delete headerList after its used to free up space?
 	struct curl_slist *headerList = NULL;
 
 	
@@ -545,7 +545,7 @@ static bool findPetsByTagsHelper(char * accessToken,
 	int pos;
 
 
-	//TODO: free memory of errormsg, memorystruct
+	//ORIGIN-TODO: free memory of errormsg, memorystruct
 	MemoryStruct_s* p_chunk = new MemoryStruct_s();
 	long code;
 	char* errormsg = NULL;
@@ -649,7 +649,7 @@ static bool getPetByIdProcessor(MemoryStruct_s p_chunk, long code, char* errorms
 		}
 		handler(out, error, userData);
 		return true;
-		//TODO: handle case where json parsing has an error
+		//ORIGIN-TODO: handle case where json parsing has an error
 
 	} else {
 		Error error;
@@ -671,7 +671,7 @@ static bool getPetByIdHelper(char * accessToken,
 	, void* userData, bool isAsync)
 {
 
-	//TODO: maybe delete headerList after its used to free up space?
+	//ORIGIN-TODO: maybe delete headerList after its used to free up space?
 	struct curl_slist *headerList = NULL;
 
 	
@@ -697,7 +697,7 @@ static bool getPetByIdHelper(char * accessToken,
 	url.erase(pos, s_petId.length());
 	url.insert(pos, stringify(&petId, "long long"));
 
-	//TODO: free memory of errormsg, memorystruct
+	//ORIGIN-TODO: free memory of errormsg, memorystruct
 	MemoryStruct_s* p_chunk = new MemoryStruct_s();
 	long code;
 	char* errormsg = NULL;
@@ -801,7 +801,7 @@ static bool updatePetHelper(char * accessToken,
 	void(* handler)(Error, void* ) , void* userData, bool isAsync)
 {
 
-	//TODO: maybe delete headerList after its used to free up space?
+	//ORIGIN-TODO: maybe delete headerList after its used to free up space?
 	struct curl_slist *headerList = NULL;
 
 	
@@ -835,7 +835,7 @@ static bool updatePetHelper(char * accessToken,
 	int pos;
 
 
-	//TODO: free memory of errormsg, memorystruct
+	//ORIGIN-TODO: free memory of errormsg, memorystruct
 	MemoryStruct_s* p_chunk = new MemoryStruct_s();
 	long code;
 	char* errormsg = NULL;
@@ -939,7 +939,7 @@ static bool updatePetWithFormHelper(char * accessToken,
 	void(* handler)(Error, void* ) , void* userData, bool isAsync)
 {
 
-	//TODO: maybe delete headerList after its used to free up space?
+	//ORIGIN-TODO: maybe delete headerList after its used to free up space?
 	struct curl_slist *headerList = NULL;
 
 	
@@ -965,7 +965,7 @@ static bool updatePetWithFormHelper(char * accessToken,
 	url.erase(pos, s_petId.length());
 	url.insert(pos, stringify(&petId, "long long"));
 
-	//TODO: free memory of errormsg, memorystruct
+	//ORIGIN-TODO: free memory of errormsg, memorystruct
 	MemoryStruct_s* p_chunk = new MemoryStruct_s();
 	long code;
 	char* errormsg = NULL;
@@ -1069,7 +1069,7 @@ static bool uploadFileProcessor(MemoryStruct_s p_chunk, long code, char* errorms
 		}
 		handler(out, error, userData);
 		return true;
-		//TODO: handle case where json parsing has an error
+		//ORIGIN-TODO: handle case where json parsing has an error
 
 	} else {
 		Error error;
@@ -1091,7 +1091,7 @@ static bool uploadFileHelper(char * accessToken,
 	, void* userData, bool isAsync)
 {
 
-	//TODO: maybe delete headerList after its used to free up space?
+	//ORIGIN-TODO: maybe delete headerList after its used to free up space?
 	struct curl_slist *headerList = NULL;
 
 	
@@ -1117,7 +1117,7 @@ static bool uploadFileHelper(char * accessToken,
 	url.erase(pos, s_petId.length());
 	url.insert(pos, stringify(&petId, "long long"));
 
-	//TODO: free memory of errormsg, memorystruct
+	//ORIGIN-TODO: free memory of errormsg, memorystruct
 	MemoryStruct_s* p_chunk = new MemoryStruct_s();
 	long code;
 	char* errormsg = NULL;

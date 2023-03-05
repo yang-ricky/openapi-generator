@@ -28,7 +28,7 @@ class StoreInventory
      */
     public function getInventory(ServerRequestInterface $request): \App\DTO\Collection34
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         throw new PHException\HttpCode(501, "Not implemented");
     }
 }

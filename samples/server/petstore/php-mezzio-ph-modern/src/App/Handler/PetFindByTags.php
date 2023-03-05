@@ -28,7 +28,7 @@ class PetFindByTags
     #[PHA\Producer("application/json", PHProducer\Transfer::class)]
     public function findPetsByTags(ServerRequestInterface $request): \App\DTO\Collection26
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         /** @var \App\DTO\FindPetsByTagsQueryData $queryData */
         $queryData = $request->getAttribute("queryData");
         throw new PHException\HttpCode(501, "Not implemented");

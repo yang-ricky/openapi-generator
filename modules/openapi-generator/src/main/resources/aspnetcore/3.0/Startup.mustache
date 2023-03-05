@@ -152,10 +152,10 @@ namespace {{packageName}}
                 {
                     // set route prefix to openapi, e.g. http://localhost:8080/openapi/index.html
                     c.RoutePrefix = "openapi";
-                    //TODO: Either use the SwaggerGen generated OpenAPI contract (generated from C# classes)
+                    //ORIGIN-TODO: Either use the SwaggerGen generated OpenAPI contract (generated from C# classes)
                     c.SwaggerEndpoint("/openapi/{{{version}}}{{^version}}v1{{/version}}/openapi.json", "{{{appName}}}{{^appName}}{{packageName}}{{/appName}}");
 
-                    //TODO: Or alternatively use the original OpenAPI contract that's included in the static files
+                    //ORIGIN-TODO: Or alternatively use the original OpenAPI contract that's included in the static files
                     // c.SwaggerEndpoint("/openapi-original.json", "{{{appName}}}{{^appName}}{{packageName}}{{/appName}} Original");
                 }){{/useSwashbuckle}};
             app.UseRouting();

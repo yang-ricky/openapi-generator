@@ -28,7 +28,7 @@ class PetPetIdUploadImage
      */
     public function uploadFile(ServerRequestInterface $request): \App\DTO\ApiResponse
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         throw new PHException\HttpCode(501, "Not implemented");
     }
 }

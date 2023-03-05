@@ -24,7 +24,7 @@ class PetPetId
      */
     public function deletePet(ServerRequestInterface $request)
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         throw new PHException\HttpCode(501, "Not implemented");
     }
     /**
@@ -42,7 +42,7 @@ class PetPetId
      */
     public function getPetById(ServerRequestInterface $request): \App\DTO\Pet
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         throw new PHException\HttpCode(501, "Not implemented");
     }
     /**
@@ -54,7 +54,7 @@ class PetPetId
      */
     public function updatePetWithForm(ServerRequestInterface $request)
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         throw new PHException\HttpCode(501, "Not implemented");
     }
 }

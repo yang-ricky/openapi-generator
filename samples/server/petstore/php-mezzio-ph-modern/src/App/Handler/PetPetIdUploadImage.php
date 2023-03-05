@@ -21,7 +21,7 @@ class PetPetIdUploadImage
     #[PHA\Producer("application/json", PHProducer\Transfer::class)]
     public function uploadFile(ServerRequestInterface $request): \App\DTO\ApiResponse
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         throw new PHException\HttpCode(501, "Not implemented");
     }
 }

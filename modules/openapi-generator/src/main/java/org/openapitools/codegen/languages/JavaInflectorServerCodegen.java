@@ -53,13 +53,13 @@ public class JavaInflectorServerCodegen extends AbstractJavaCodegen {
         embeddedTemplateDir = templateDir = "JavaInflector";
         invokerPackage = "org.openapitools.controllers";
         artifactId = "openapi-inflector-server";
-        dateLibrary = "legacy"; //TODO: add joda support
+        dateLibrary = "legacy"; //ORIGIN-TODO: add joda support
         apiPackage = GlobalSettings.getProperty("swagger.codegen.inflector.apipackage", "org.openapitools.controllers");
         modelPackage = GlobalSettings.getProperty("swagger.codegen.inflector.modelpackage", "org.openapitools.model");
 
         // clear model and api doc template as this codegen
         // does not support auto-generated markdown doc at the moment
-        //TODO: add doc templates
+        //ORIGIN-TODO: add doc templates
         modelDocTemplateFiles.remove("model_doc.mustache");
         apiDocTemplateFiles.remove("api_doc.mustache");
 

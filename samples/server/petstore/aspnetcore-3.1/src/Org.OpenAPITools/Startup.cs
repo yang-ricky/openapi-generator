@@ -140,10 +140,10 @@ namespace Org.OpenAPITools
                 {
                     // set route prefix to openapi, e.g. http://localhost:8080/openapi/index.html
                     c.RoutePrefix = "openapi";
-                    //TODO: Either use the SwaggerGen generated OpenAPI contract (generated from C# classes)
+                    //ORIGIN-TODO: Either use the SwaggerGen generated OpenAPI contract (generated from C# classes)
                     c.SwaggerEndpoint("/openapi/1.0.0/openapi.json", "OpenAPI Petstore");
 
-                    //TODO: Or alternatively use the original OpenAPI contract that's included in the static files
+                    //ORIGIN-TODO: Or alternatively use the original OpenAPI contract that's included in the static files
                     // c.SwaggerEndpoint("/openapi-original.json", "OpenAPI Petstore Original");
                 });
             app.UseRouting();

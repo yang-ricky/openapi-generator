@@ -122,7 +122,7 @@ public class CppTizenClientCodegen extends AbstractCppCodegen implements Codegen
         typeMapping.put("object", "std::string");
         typeMapping.put("binary", "std::string");
         typeMapping.put("password", "std::string");
-        //TODO:Maybe use better formats for dateTime?
+        //ORIGIN-TODO:Maybe use better formats for dateTime?
         typeMapping.put("file", "std::string");
         typeMapping.put("DateTime", "std::string");
         typeMapping.put("Date", "std::string");

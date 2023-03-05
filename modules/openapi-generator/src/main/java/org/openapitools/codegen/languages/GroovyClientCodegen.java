@@ -79,7 +79,7 @@ public class GroovyClientCodegen extends AbstractJavaCodegen {
 
         // clear model and api doc template as this codegen
         // does not support auto-generated markdown doc at the moment
-        //TODO: add doc templates
+        //ORIGIN-TODO: add doc templates
         modelDocTemplateFiles.remove("model_doc.mustache");
         apiDocTemplateFiles.remove("api_doc.mustache");
 
@@ -87,7 +87,7 @@ public class GroovyClientCodegen extends AbstractJavaCodegen {
         modelPackage = "org.openapitools.model";
         invokerPackage = "org.openapitools.api";
         artifactId = "openapi-groovy";
-        dateLibrary = "legacy"; //TODO: add joda support to groovy
+        dateLibrary = "legacy"; //ORIGIN-TODO: add joda support to groovy
 
         // cliOptions default redefinition need to be updated
         updateOption(CodegenConstants.SOURCE_FOLDER, this.getSourceFolder());

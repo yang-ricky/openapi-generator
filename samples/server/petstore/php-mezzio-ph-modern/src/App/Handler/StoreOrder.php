@@ -26,7 +26,7 @@ class StoreOrder
     #[PHA\Producer("application/json", PHProducer\Transfer::class)]
     public function placeOrder(ServerRequestInterface $request): \App\DTO\Order
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         /** @var \App\DTO\Order $bodyData */
         $bodyData = $request->getAttribute("bodyData");
         throw new PHException\HttpCode(501, "Not implemented");

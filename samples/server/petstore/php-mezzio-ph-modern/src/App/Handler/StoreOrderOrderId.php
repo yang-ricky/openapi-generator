@@ -19,7 +19,7 @@ class StoreOrderOrderId
     #[PHA\Delete()]
     public function deleteOrder(ServerRequestInterface $request)
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         throw new PHException\HttpCode(501, "Not implemented");
     }
     /**
@@ -32,7 +32,7 @@ class StoreOrderOrderId
     #[PHA\Producer("application/json", PHProducer\Transfer::class)]
     public function getOrderById(ServerRequestInterface $request): \App\DTO\Order
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         throw new PHException\HttpCode(501, "Not implemented");
     }
 }

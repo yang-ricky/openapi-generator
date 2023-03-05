@@ -22,7 +22,7 @@ class UserCreateWithArray
     #[PHA\Attribute(PHAttribute\Transfer::class, ["type" => \App\DTO\Collection36::class, "objectAttr" => "bodyData"])]
     public function createUsersWithArrayInput(ServerRequestInterface $request)
     {
-        //TODO implement method
+        //ORIGIN-TODO implement method
         /** @var \App\DTO\Collection36 $bodyData */
         $bodyData = $request->getAttribute("bodyData");
         throw new PHException\HttpCode(501, "Not implemented");
